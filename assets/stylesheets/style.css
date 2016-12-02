@@ -1,0 +1,311 @@
+body{
+ font-family: 'Raleway', sans-serif;
+font-size:1em;
+font-weight:bold;
+animation:test 3s;}
+
+@-webkit-keyframes test {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+/*--------- navigatie ---------*/
+nav{
+  height:55px;
+  background-color: #4569A0;
+  position:fixed;
+  width:100%;
+  z-index:4;
+}
+
+nav li{
+  display:inline;
+  float:right;
+  padding:20px;
+}
+
+nav a{
+  text-decoration:none;
+  color:white;
+ }
+nav a:hover{
+
+  color:#94AFD4;
+}
+/*------- Foto's / border ----- */
+#arrow {
+  width:5%;
+  position: fixed;
+  left:46.1%;
+  top:85%;
+}
+#groot{
+  width:38%;
+
+}
+#klein{
+
+  width: 5%;
+  position: absolute;
+}
+.tekst1{
+  line-height: 1.5em;
+
+}
+#hoofd{
+  position: absolute;
+  width:22%;
+  left:65%;
+  top:30%;
+}
+
+/*--------- algemeen ---------*/
+h1{
+  color: #4569A0;
+  letter-spacing:2px;
+  margin-bottom:10px;
+  text-transform: uppercase;
+}
+h2{
+  color: #4569A0;
+  position:fixed;
+  top:70%;
+  left:43.5%;
+}
+h3{
+  color: #4569A0;
+  font-size:1.2em;
+  text-transform: uppercase;
+  left:42%;
+  position: absolute;
+  padding:2%;
+
+}
+h4{
+  padding:2%;
+  color: #4569A0;
+  font-size:1.2em;
+  text-transform: uppercase;
+}
+.container{
+  color:white;
+     background:url('gradient.jpg');
+     background-size: 180%;
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+.contentwrapper {
+     position: absolute;
+    top: 100%;
+    width: 100%;
+    height:90%;
+    min-height: 12%;
+    z-index: 2;
+    background-color:white;
+    padding-top:60px;
+
+}
+.content{
+  width:40%;
+  margin-top:200px;
+margin-left:41%;
+
+}
+/*------- flex -----------*/
+
+.flexing{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  top:100%;
+  height: 100%;
+}
+.flex{
+  margin:10%;
+  flex:1;
+  width:250px;
+  padding-top:50px;
+
+}
+section{
+  height:100vh;
+}
+
+/*--------- contact form ---------*/
+#contact{
+  background:url('gradient.jpg');
+  background-size: 180%;
+
+   padding:2%;
+   height: 100%;
+   padding-top:60px;
+
+}
+
+form label {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+form button {
+  float: right;
+  margin: 5px 0 0 10px;
+}
+
+input, textarea {
+    display: block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    padding: 8px 12px;
+    outline: none;
+    border:none;
+    background: white;
+    color: #4569A0;
+    appearance: normal;
+
+}
+
+textarea {
+    height: auto;
+    resize: none;
+}
+
+/* where the magic happens -------------- */
+form input:hover, form textarea:hover {
+    border-color: #4569A0;
+}
+
+form input:focus:invalid, form textarea:focus:invalid {
+    border-color: #4569A0;
+}
+
+form input:focus:valid, form textarea:focus:valid {
+    border-color: #4569A0;
+}
+
+
+form label:after {
+    content: "*";
+    background-color: white;
+    color: #4569A0;
+    text-shadow: none;
+    display: inline-block;
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    z-index: 1;
+}
+
+form label:before {
+    content: "";
+    background-color: transparent;
+    color: white;
+    padding: 9px 14px;
+    text-shadow: none;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 0;
+    height: 35px;
+    line-height: 16px;
+    z-index: 2;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.btn{
+  color:white;
+background-color:#94AFD3;
+border:none;
+width:100%;
+padding:2%;
+margin-top:10px;
+
+}
+li{
+  list-style-type: none;
+}
+/*--------- text scramble ---------------*/
+
+
+.scrambler{
+  	justify-content: center;
+  	align-items: center;
+  	display: flex;
+    margin-left:-65%;
+}
+.text {
+
+  margin-top:200px;
+	font-weight: 100;
+	font-size: 30px;
+	color: #4569A0;
+
+}
+/*-------- Mobile version -------*/
+
+@media only screen and (max-width: 767px) {
+
+body{
+  font-size:0.5em;
+}
+.container{
+background-size: 450%;
+}
+#contact{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#94afd3+0,4569a0+100 */
+  background: rgb(148,175,211); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(148,175,211,1) 0%, rgba(69,105,160,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(148,175,211,1) 0%,rgba(69,105,160,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(148,175,211,1) 0%,rgba(69,105,160,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#94afd3', endColorstr='#4569a0',GradientType=0 ); /* IE6-9 */
+
+
+}
+#hoofd{
+  position: absolute;
+  width:32%;
+  left:55%;
+  top:25%;
+}
+#groot{
+  width:28%;
+  left:35%;
+  position: fixed;
+
+}
+.text {
+
+  margin-top:150px;
+	font-size: 16px;
+
+
+}
+
+nav{
+  height:50px;
+}
+nav li{
+
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left:10px;
+}
+form label {
+
+    font-size: 7px;
+    margin-top: 6px;
+}
+}
