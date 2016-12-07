@@ -88,7 +88,7 @@ h4{
 }
 .container{
   color:white;
-     background:url('assets/images/gradient.jpg');
+     background:url('assets/stylesheets/gradient.jpg');
      background-size: 180%;
     z-index: 1;
     overflow: hidden;
@@ -140,7 +140,7 @@ section{
 
 /*--------- contact form ---------*/
 #contact{
-  background:url('assets/images/gradient.jpg');
+  background:url('assets/stylesheets/gradient.jpg');
   background-size: 180%;
 
    padding:2%;
